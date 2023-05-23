@@ -6,6 +6,10 @@ import Registration from '../pages/Registration/Registration';
 import CheckOut from '../pages/CheckOut/CheckOut';
 import Ordered from '../pages/Ordered/Ordered';
 import PrivateRoute from './PrivateRoute';
+import About from '../pages/Home/About/About';
+import Services from '../pages/Home/Services/Services';
+import Blog from '../pages/Blog/Blog';
+import Contact from '../pages/Contact/Contact';
 
 const router = createBrowserRouter([
   {
@@ -15,6 +19,22 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home />,
+      },
+      {
+        path: 'about',
+        element:<About/>
+      },
+      {
+        path: 'service',
+        element:<Services/>
+      },
+      {
+        path: 'blog',
+        element:<Blog/>
+      },
+      {
+        path: 'contact',
+        element:<Contact/>
       },
       {
         path: 'login',
